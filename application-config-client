@@ -1,0 +1,35 @@
+spring: 
+  profiles:
+    active:
+    - dev
+    
+---
+server:
+  port: 7777
+spring:
+  profiles: dev
+  application:
+    name: config-clien-dev
+eureka:
+  instance:
+    instance-id: config7777
+    prefer-ip-address: true
+  client:
+    service-url:
+      dafaultZone: http://127.0.0.1:7002/eureka/
+      
+---
+server:
+  port: 7778
+spring:
+  profiles: test
+  application:
+    name: config-clien-test
+eureka:
+  instance:
+    instance-id: config7778
+    prefer-ip-address: true
+  client:
+    service-url:
+      dafaultZone: http://127.0.0.1:7002/eureka/
+
