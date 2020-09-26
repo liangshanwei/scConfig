@@ -16,7 +16,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      dafaultZone: http://127.0.0.1:7002/eureka/
+      defaultZone: http://127.0.0.1:7002/eureka/
       
 ---
 server:
@@ -31,5 +31,5 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      dafaultZone: http://127.0.0.1:7002/eureka/
+      defaultZone: http://127.0.0.1:7002/eureka/
 
